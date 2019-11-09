@@ -1,0 +1,691 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9fdc5/fast && /usr/bin/make -f CMakeFiles/cmTC_9fdc5.dir/build.make CMakeFiles/cmTC_9fdc5.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9fdc5.dir/src.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_9fdc5.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+cc1: error: ‘-mpreferred-stack-boundary=2’ is not between 3 and 12
+make[1]: *** [CMakeFiles/cmTC_9fdc5.dir/build.make:66: CMakeFiles/cmTC_9fdc5.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9fdc5/fast] Error 2
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_43925/fast && /usr/bin/make -f CMakeFiles/cmTC_43925.dir/build.make CMakeFiles/cmTC_43925.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43925.dir/src.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTC_43925.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+gcc: error: unrecognized command line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_43925.dir/build.make:66: CMakeFiles/cmTC_43925.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_43925/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_556b3/fast && /usr/bin/make -f CMakeFiles/cmTC_556b3.dir/build.make CMakeFiles/cmTC_556b3.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_556b3.dir/src.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTC_556b3.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+gcc: error: unrecognized command line option ‘-maltivec’
+make[1]: *** [CMakeFiles/cmTC_556b3.dir/build.make:66: CMakeFiles/cmTC_556b3.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_556b3/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2118a/fast && /usr/bin/make -f CMakeFiles/cmTC_2118a.dir/build.make CMakeFiles/cmTC_2118a.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2118a.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_2118a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2118a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2118a.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_2118a.dir/CheckFunctionExists.c.o  -o cmTC_2118a 
+/usr/bin/ld: CMakeFiles/cmTC_2118a.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2118a.dir/build.make:87: cmTC_2118a] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2118a/fast] Error 2
+
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6d368/fast && /usr/bin/make -f CMakeFiles/cmTC_6d368.dir/build.make CMakeFiles/cmTC_6d368.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6d368.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_6d368.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6d368
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d368.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat    -rdynamic CMakeFiles/cmTC_6d368.dir/CheckFunctionExists.c.o  -o cmTC_6d368 
+/usr/bin/ld: CMakeFiles/cmTC_6d368.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_6d368.dir/build.make:87: cmTC_6d368] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6d368/fast] Error 2
+
+
+
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9c2c8/fast && /usr/bin/make -f CMakeFiles/cmTC_9c2c8.dir/build.make CMakeFiles/cmTC_9c2c8.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9c2c8.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev   -o CMakeFiles/cmTC_9c2c8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9c2c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c2c8.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev    -rdynamic CMakeFiles/cmTC_9c2c8.dir/CheckFunctionExists.c.o  -o cmTC_9c2c8 
+/usr/bin/ld: CMakeFiles/cmTC_9c2c8.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_strrev'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9c2c8.dir/build.make:87: cmTC_9c2c8] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9c2c8/fast] Error 2
+
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_480f7/fast && /usr/bin/make -f CMakeFiles/cmTC_480f7.dir/build.make CMakeFiles/cmTC_480f7.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_480f7.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr   -o CMakeFiles/cmTC_480f7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_480f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_480f7.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr    -rdynamic CMakeFiles/cmTC_480f7.dir/CheckFunctionExists.c.o  -o cmTC_480f7 
+/usr/bin/ld: CMakeFiles/cmTC_480f7.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_strupr'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_480f7.dir/build.make:87: cmTC_480f7] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_480f7/fast] Error 2
+
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5cb6f/fast && /usr/bin/make -f CMakeFiles/cmTC_5cb6f.dir/build.make CMakeFiles/cmTC_5cb6f.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cb6f.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr   -o CMakeFiles/cmTC_5cb6f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5cb6f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cb6f.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr    -rdynamic CMakeFiles/cmTC_5cb6f.dir/CheckFunctionExists.c.o  -o cmTC_5cb6f 
+/usr/bin/ld: CMakeFiles/cmTC_5cb6f.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_strlwr'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5cb6f.dir/build.make:87: cmTC_5cb6f] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5cb6f/fast] Error 2
+
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c89e8/fast && /usr/bin/make -f CMakeFiles/cmTC_c89e8.dir/build.make CMakeFiles/cmTC_c89e8.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c89e8.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa   -o CMakeFiles/cmTC_c89e8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c89e8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c89e8.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa    -rdynamic CMakeFiles/cmTC_c89e8.dir/CheckFunctionExists.c.o  -o cmTC_c89e8 
+/usr/bin/ld: CMakeFiles/cmTC_c89e8.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `itoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c89e8.dir/build.make:87: cmTC_c89e8] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c89e8/fast] Error 2
+
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a66c0/fast && /usr/bin/make -f CMakeFiles/cmTC_a66c0.dir/build.make CMakeFiles/cmTC_a66c0.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a66c0.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa   -o CMakeFiles/cmTC_a66c0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a66c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a66c0.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa    -rdynamic CMakeFiles/cmTC_a66c0.dir/CheckFunctionExists.c.o  -o cmTC_a66c0 
+/usr/bin/ld: CMakeFiles/cmTC_a66c0.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_ltoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a66c0.dir/build.make:87: cmTC_a66c0] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a66c0/fast] Error 2
+
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_71065/fast && /usr/bin/make -f CMakeFiles/cmTC_71065.dir/build.make CMakeFiles/cmTC_71065.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71065.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa   -o CMakeFiles/cmTC_71065.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_71065
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71065.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa    -rdynamic CMakeFiles/cmTC_71065.dir/CheckFunctionExists.c.o  -o cmTC_71065 
+/usr/bin/ld: CMakeFiles/cmTC_71065.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_uitoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_71065.dir/build.make:87: cmTC_71065] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_71065/fast] Error 2
+
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2c686/fast && /usr/bin/make -f CMakeFiles/cmTC_2c686.dir/build.make CMakeFiles/cmTC_2c686.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c686.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa   -o CMakeFiles/cmTC_2c686.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2c686
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c686.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa    -rdynamic CMakeFiles/cmTC_2c686.dir/CheckFunctionExists.c.o  -o cmTC_2c686 
+/usr/bin/ld: CMakeFiles/cmTC_2c686.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_ultoa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2c686.dir/build.make:87: cmTC_2c686] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2c686/fast] Error 2
+
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3e0e7/fast && /usr/bin/make -f CMakeFiles/cmTC_3e0e7.dir/build.make CMakeFiles/cmTC_3e0e7.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e0e7.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa   -o CMakeFiles/cmTC_3e0e7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3e0e7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e0e7.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa    -rdynamic CMakeFiles/cmTC_3e0e7.dir/CheckFunctionExists.c.o  -o cmTC_3e0e7 
+/usr/bin/ld: CMakeFiles/cmTC_3e0e7.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_i64toa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3e0e7.dir/build.make:87: cmTC_3e0e7] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3e0e7/fast] Error 2
+
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c4284/fast && /usr/bin/make -f CMakeFiles/cmTC_c4284.dir/build.make CMakeFiles/cmTC_c4284.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4284.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa   -o CMakeFiles/cmTC_c4284.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c4284
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4284.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa    -rdynamic CMakeFiles/cmTC_c4284.dir/CheckFunctionExists.c.o  -o cmTC_c4284 
+/usr/bin/ld: CMakeFiles/cmTC_c4284.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_ui64toa'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c4284.dir/build.make:87: cmTC_c4284] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c4284/fast] Error 2
+
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ab8ae/fast && /usr/bin/make -f CMakeFiles/cmTC_ab8ae.dir/build.make CMakeFiles/cmTC_ab8ae.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab8ae.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp   -o CMakeFiles/cmTC_ab8ae.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ab8ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab8ae.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp    -rdynamic CMakeFiles/cmTC_ab8ae.dir/CheckFunctionExists.c.o  -o cmTC_ab8ae 
+/usr/bin/ld: CMakeFiles/cmTC_ab8ae.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_stricmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ab8ae.dir/build.make:87: cmTC_ab8ae] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ab8ae/fast] Error 2
+
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4d590/fast && /usr/bin/make -f CMakeFiles/cmTC_4d590.dir/build.make CMakeFiles/cmTC_4d590.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4d590.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp   -o CMakeFiles/cmTC_4d590.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4d590
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4d590.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp    -rdynamic CMakeFiles/cmTC_4d590.dir/CheckFunctionExists.c.o  -o cmTC_4d590 
+/usr/bin/ld: CMakeFiles/cmTC_4d590.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `_strnicmp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_4d590.dir/build.make:87: cmTC_4d590] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4d590/fast] Error 2
+
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e5049/fast && /usr/bin/make -f CMakeFiles/cmTC_e5049.dir/build.make CMakeFiles/cmTC_e5049.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e5049.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_e5049.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e5049
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5049.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname    -rdynamic CMakeFiles/cmTC_e5049.dir/CheckFunctionExists.c.o  -o cmTC_e5049 
+/usr/bin/ld: CMakeFiles/cmTC_e5049.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `sysctlbyname'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e5049.dir/build.make:87: cmTC_e5049] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e5049/fast] Error 2
+
+
+
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5ab8c/fast && /usr/bin/make -f CMakeFiles/cmTC_5ab8c.dir/build.make CMakeFiles/cmTC_5ab8c.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ab8c.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_5ab8c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5ab8c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ab8c.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open    -rdynamic CMakeFiles/cmTC_5ab8c.dir/CheckFunctionExists.c.o  -o cmTC_5ab8c -liconv 
+/usr/bin/ld: cannot find -liconv
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5ab8c.dir/build.make:87: cmTC_5ab8c] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5ab8c/fast] Error 2
+
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_36cd9/fast && /usr/bin/make -f CMakeFiles/cmTC_36cd9.dir/build.make CMakeFiles/cmTC_36cd9.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_36cd9.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTC_36cd9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘alloca’; expected ‘void *(long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_36cd9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36cd9.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca    -rdynamic CMakeFiles/cmTC_36cd9.dir/CheckFunctionExists.c.o  -o cmTC_36cd9 
+/usr/bin/ld: CMakeFiles/cmTC_36cd9.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_36cd9.dir/build.make:87: cmTC_36cd9] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_36cd9/fast] Error 2
+
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c1718/fast && /usr/bin/make -f CMakeFiles/cmTC_c1718.dir/build.make CMakeFiles/cmTC_c1718.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1718.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_c1718.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c1718
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1718.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen    -rdynamic CMakeFiles/cmTC_c1718.dir/CheckFunctionExists.c.o  -o cmTC_c1718 
+/usr/bin/ld: CMakeFiles/cmTC_c1718.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c1718.dir/build.make:87: cmTC_c1718] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c1718/fast] Error 2
+
+
+
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c269f/fast && /usr/bin/make -f CMakeFiles/cmTC_c269f.dir/build.make CMakeFiles/cmTC_c269f.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c269f.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos    -o CMakeFiles/cmTC_c269f.dir/CheckIncludeFile.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
+    1 | #include <audio/audiolib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_c269f.dir/build.make:66: CMakeFiles/cmTC_c269f.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c269f/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2b8e9/fast && /usr/bin/make -f CMakeFiles/cmTC_2b8e9.dir/build.make CMakeFiles/cmTC_2b8e9.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2b8e9.dir/src.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_VIDEO_RPI  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -o CMakeFiles/cmTC_2b8e9.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: bcm_host.h: No such file or directory
+    2 |         #include <bcm_host.h>
+      |                  ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_2b8e9.dir/build.make:66: CMakeFiles/cmTC_2b8e9.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2b8e9/fast] Error 2
+
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V1 failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6c66a/fast && /usr/bin/make -f CMakeFiles/cmTC_6c66a.dir/build.make CMakeFiles/cmTC_6c66a.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c66a.dir/src.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_VIDEO_OPENGLES_V1   -o CMakeFiles/cmTC_6c66a.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c:2:16: fatal error: GLES/gl.h: No such file or directory
+    2 |       #include <GLES/gl.h>
+      |                ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_6c66a.dir/build.make:66: CMakeFiles/cmTC_6c66a.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6c66a/fast] Error 2
+
+
+Source file was:
+
+      #include <GLES/gl.h>
+      #include <GLES/glext.h>
+      int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c89aa/fast && /usr/bin/make -f CMakeFiles/cmTC_c89aa.dir/build.make CMakeFiles/cmTC_c89aa.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c89aa.dir/src.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_VIDEO_VIVANTE_VDK   -o CMakeFiles/cmTC_c89aa.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
+    2 |         #include <gc_vdk.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_c89aa.dir/build.make:66: CMakeFiles/cmTC_c89aa.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c89aa/fast] Error 2
+
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e4109/fast && /usr/bin/make -f CMakeFiles/cmTC_e4109.dir/build.make CMakeFiles/cmTC_e4109.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4109.dir/src.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_VIDEO_VIVANTE_EGL_FB   -o CMakeFiles/cmTC_e4109.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
+    4 |         #include <EGL/eglvivante.h>
+      |                  ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e4109.dir/build.make:66: CMakeFiles/cmTC_e4109.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e4109/fast] Error 2
+
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file fcitx/frontend.h exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1c1bb/fast && /usr/bin/make -f CMakeFiles/cmTC_1c1bb.dir/build.make CMakeFiles/cmTC_1c1bb.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c1bb.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos    -o CMakeFiles/cmTC_1c1bb.dir/CheckIncludeFile.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: fcitx/frontend.h: No such file or directory
+    1 | #include <fcitx/frontend.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_1c1bb.dir/build.make:66: CMakeFiles/cmTC_1c1bb.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1c1bb/fast] Error 2
+
+
+
+Determining if the function hid_init exists in the usbhid failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1e590/fast && /usr/bin/make -f CMakeFiles/cmTC_1e590.dir/build.make CMakeFiles/cmTC_1e590.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1e590.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_1e590.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1e590
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e590.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_1e590.dir/CheckFunctionExists.c.o  -o cmTC_1e590 -lusbhid 
+/usr/bin/ld: cannot find -lusbhid
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_1e590.dir/build.make:87: cmTC_1e590] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1e590/fast] Error 2
+
+
+
+Determining if the include file libusb.h exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2d940/fast && /usr/bin/make -f CMakeFiles/cmTC_2d940.dir/build.make CMakeFiles/cmTC_2d940.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d940.dir/CheckIncludeFile.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos    -o CMakeFiles/cmTC_2d940.dir/CheckIncludeFile.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libusb.h: No such file or directory
+    1 | #include <libusb.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_2d940.dir/build.make:66: CMakeFiles/cmTC_2d940.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2d940/fast] Error 2
+
+
+
+Determining if the function hid_init exists in the usb failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ae2e0/fast && /usr/bin/make -f CMakeFiles/cmTC_ae2e0.dir/build.make CMakeFiles/cmTC_ae2e0.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae2e0.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_ae2e0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ae2e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae2e0.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_ae2e0.dir/CheckFunctionExists.c.o  -o cmTC_ae2e0 -lusb 
+/usr/bin/ld: CMakeFiles/cmTC_ae2e0.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `hid_init'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ae2e0.dir/build.make:87: cmTC_ae2e0] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ae2e0/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_USBHID failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0854f/fast && /usr/bin/make -f CMakeFiles/cmTC_0854f.dir/build.make CMakeFiles/cmTC_0854f.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0854f.dir/src.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_USBHID  -DHAVE_USB_H   -o CMakeFiles/cmTC_0854f.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c:10:19: fatal error: dev/usb/usb.h: No such file or directory
+   10 |         # include <dev/usb/usb.h>
+      |                   ^~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_0854f.dir/build.make:66: CMakeFiles/cmTC_0854f.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0854f/fast] Error 2
+
+
+Source file was:
+
+       #include <sys/types.h>
+        #if defined(HAVE_USB_H)
+        #include <usb.h>
+        #endif
+        #ifdef __DragonFly__
+        # include <bus/usb/usb.h>
+        # include <bus/usb/usbhid.h>
+        #else
+        # include <dev/usb/usb.h>
+        # include <dev/usb/usbhid.h>
+        #endif
+        #if defined(HAVE_USBHID_H)
+        #include <usbhid.h>
+        #elif defined(HAVE_LIBUSB_H)
+        #include <libusb.h>
+        #elif defined(HAVE_LIBUSBHID_H)
+        #include <libusbhid.h>
+        #endif
+        int main(int argc, char **argv) {
+          struct report_desc *repdesc;
+          struct usb_ctl_report *repbuf;
+          hid_kind_t hidkind;
+          return 0;
+        }
+Performing C SOURCE FILE Test HAVE_PTHREAD_NP_H failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_76187/fast && /usr/bin/make -f CMakeFiles/cmTC_76187.dir/build.make CMakeFiles/cmTC_76187.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76187.dir/src.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_PTHREAD_NP_H  -DHAVE_USB_H -D_REENTRANT -pthread   -o CMakeFiles/cmTC_76187.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c:3:20: fatal error: pthread_np.h: No such file or directory
+    3 |           #include <pthread_np.h>
+      |                    ^~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_76187.dir/build.make:66: CMakeFiles/cmTC_76187.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_76187/fast] Error 2
+
+
+Source file was:
+
+          #include <pthread.h>
+          #include <pthread_np.h>
+          int main(int argc, char** argv) { return 0; }
+Determining if the function pthread_set_name_np exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_53b3b/fast && /usr/bin/make -f CMakeFiles/cmTC_53b3b.dir/build.make CMakeFiles/cmTC_53b3b.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53b3b.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np  -DHAVE_USB_H -D_REENTRANT -pthread   -o CMakeFiles/cmTC_53b3b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_53b3b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53b3b.dir/link.txt --verbose=1
+/usr/bin/gcc -g -O3 -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np  -DHAVE_USB_H -D_REENTRANT -pthread    -rdynamic CMakeFiles/cmTC_53b3b.dir/CheckFunctionExists.c.o  -o cmTC_53b3b 
+/usr/bin/ld: CMakeFiles/cmTC_53b3b.dir/CheckFunctionExists.c.o: in function `main':
+/usr/share/cmake-3.15/Modules/CheckFunctionExists.c:17: undefined reference to `pthread_set_name_np'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_53b3b.dir/build.make:87: cmTC_53b3b] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_53b3b/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5bd03/fast && /usr/bin/make -f CMakeFiles/cmTC_5bd03.dir/build.make CMakeFiles/cmTC_5bd03.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5bd03.dir/src.c.o
+/usr/bin/gcc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5bd03.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5bd03
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bd03.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_5bd03.dir/src.c.o  -o cmTC_5bd03 
+/usr/bin/ld: CMakeFiles/cmTC_5bd03.dir/src.c.o: in function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4a): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5b): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5bd03.dir/build.make:87: cmTC_5bd03] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5bd03/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_98480/fast && /usr/bin/make -f CMakeFiles/cmTC_98480.dir/build.make CMakeFiles/cmTC_98480.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98480.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_98480.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_98480
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98480.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_98480.dir/CheckFunctionExists.c.o  -o cmTC_98480 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_98480.dir/build.make:87: cmTC_98480] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_98480/fast] Error 2
+
+
+

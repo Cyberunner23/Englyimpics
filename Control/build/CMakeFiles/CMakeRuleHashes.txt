@@ -1,0 +1,15 @@
+# Hashes of file build rules.
+c70afb89a763b0e43679023d9a271175 deps/SDL2/wayland-generated-protocols/org-kde-kwin-server-decoration-manager-client-protocol.h
+7e781a660b501848765186dfe4f194d9 deps/SDL2/wayland-generated-protocols/org-kde-kwin-server-decoration-manager-protocol.c
+03c7360d74d067bcc7863038434c01b5 deps/SDL2/wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h
+1fab2569d013b3e5b11cd34fa05663af deps/SDL2/wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c
+11555c197ed30223e908a350d3db7d51 deps/SDL2/wayland-generated-protocols/relative-pointer-unstable-v1-client-protocol.h
+93a3dd9b90c4db7359d3e0526acd7c21 deps/SDL2/wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c
+07d7d64af8cd9feee094b468e31fa8e9 deps/SDL2/wayland-generated-protocols/wayland-client-protocol.h
+90c54351aa4a1b03c9c913be989be94a deps/SDL2/wayland-generated-protocols/wayland-protocol.c
+fc89eb4acd37565b06b92a2233b8f45e deps/SDL2/wayland-generated-protocols/xdg-decoration-unstable-v1-client-protocol.h
+514da598477993112ee68a20a0aeae18 deps/SDL2/wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c
+405a76278fb37d6bdaa0a093365315b6 deps/SDL2/wayland-generated-protocols/xdg-shell-client-protocol.h
+830abc159c883a3c1f28a5408e5f1fcb deps/SDL2/wayland-generated-protocols/xdg-shell-protocol.c
+9c8e8219801964e0639f2fc34e74f1e3 deps/SDL2/wayland-generated-protocols/xdg-shell-unstable-v6-client-protocol.h
+87f43597b4ffc87f6d62fc0a90f6ffdd deps/SDL2/wayland-generated-protocols/xdg-shell-unstable-v6-protocol.c

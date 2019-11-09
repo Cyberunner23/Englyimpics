@@ -1,0 +1,791 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_776e8/fast && /usr/bin/make -f CMakeFiles/cmTC_776e8.dir/build.make CMakeFiles/cmTC_776e8.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_776e8.dir/src.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_776e8.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+clang-9: error: unknown argument: '-mpreferred-stack-boundary=2'
+make[1]: *** [CMakeFiles/cmTC_776e8.dir/build.make:66: CMakeFiles/cmTC_776e8.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_776e8/fast] Error 2
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2a2ca/fast && /usr/bin/make -f CMakeFiles/cmTC_2a2ca.dir/build.make CMakeFiles/cmTC_2a2ca.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2a2ca.dir/src.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTC_2a2ca.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+clang-9: warning: argument unused during compilation: '-maltivec' [-Wunused-command-line-argument]
+In file included from /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+/usr/lib/clang/9.0.0/include/altivec.h:13:2: error: "AltiVec support not enabled"
+#error "AltiVec support not enabled"
+ ^
+/usr/lib/clang/9.0.0/include/altivec.h:48:19: error: unknown type name 'vector'
+static __inline__ vector signed char __ATTRS_o_ai vec_perm(
+                  ^
+/usr/lib/clang/9.0.0/include/altivec.h:49:5: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+    ^
+/usr/lib/clang/9.0.0/include/altivec.h:49:29: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+                            ^
+/usr/lib/clang/9.0.0/include/altivec.h:49:53: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+                                                    ^
+/usr/lib/clang/9.0.0/include/altivec.h:51:19: error: unknown type name 'vector'
+static __inline__ vector unsigned char __ATTRS_o_ai
+                  ^
+/usr/lib/clang/9.0.0/include/altivec.h:52:10: error: unknown type name 'vector'
+vec_perm(vector unsigned char __a, vector unsigned char __b,
+         ^
+/usr/lib/clang/9.0.0/include/altivec.h:52:36: error: unknown type name 'vector'
+vec_perm(vector unsigned char __a, vector unsigned char __b,
+                                   ^
+/usr/lib/clang/9.0.0/include/altivec.h:53:10: error: unknown type name 'vector'
+         vector unsigned char __c);
+         ^
+/usr/lib/clang/9.0.0/include/altivec.h:55:19: error: unknown type name 'vector'
+static __inline__ vector bool char __ATTRS_o_ai
+                  ^
+/usr/lib/clang/9.0.0/include/altivec.h:55:8: error: 'inline' can only appear on functions
+static __inline__ vector bool char __ATTRS_o_ai
+       ^
+/usr/lib/clang/9.0.0/include/altivec.h:55:30: error: expected ';' after top level declarator
+static __inline__ vector bool char __ATTRS_o_ai
+                             ^
+/usr/lib/clang/9.0.0/include/altivec.h:56:10: error: unknown type name 'vector'
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+         ^
+/usr/lib/clang/9.0.0/include/altivec.h:56:22: error: expected ')'
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+                     ^
+/usr/lib/clang/9.0.0/include/altivec.h:56:9: note: to match this '('
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+        ^
+/usr/lib/clang/9.0.0/include/altivec.h:58:19: error: unknown type name 'vector'
+static __inline__ vector short __ATTRS_o_ai vec_perm(vector signed short __a,
+                  ^
+/usr/lib/clang/9.0.0/include/altivec.h:58:54: error: unknown type name 'vector'
+static __inline__ vector short __ATTRS_o_ai vec_perm(vector signed short __a,
+                                                     ^
+/usr/lib/clang/9.0.0/include/altivec.h:59:54: error: unknown type name 'vector'
+                                                     vector signed short __b,
+                                                     ^
+/usr/lib/clang/9.0.0/include/altivec.h:60:54: error: unknown type name 'vector'
+                                                     vector unsigned char __c);
+                                                     ^
+/usr/lib/clang/9.0.0/include/altivec.h:62:19: error: unknown type name 'vector'
+static __inline__ vector unsigned short __ATTRS_o_ai
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make[1]: *** [CMakeFiles/cmTC_2a2ca.dir/build.make:66: CMakeFiles/cmTC_2a2ca.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2a2ca/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_79b06/fast && /usr/bin/make -f CMakeFiles/cmTC_79b06.dir/build.make CMakeFiles/cmTC_79b06.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79b06.dir/src.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTC_79b06.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+clang-9: warning: argument unused during compilation: '-maltivec' [-Wunused-command-line-argument]
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:11: error: unknown type name 'vector'
+          vector unsigned int vzero() {
+          ^
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:22: warning: implicit declaration of function 'vec_splat_u32' is invalid in C99 [-Wimplicit-function-declaration]
+              return vec_splat_u32(0);
+                     ^
+1 warning and 1 error generated.
+make[1]: *** [CMakeFiles/cmTC_79b06.dir/build.make:66: CMakeFiles/cmTC_79b06.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_79b06/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c8d33/fast && /usr/bin/make -f CMakeFiles/cmTC_c8d33.dir/build.make CMakeFiles/cmTC_c8d33.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8d33.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_c8d33.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcpy' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strlcpy
+                              ^
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c:7:3: note: 'strlcpy' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strlcpy
+                              ^
+1 warning generated.
+Linking C executable cmTC_c8d33
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8d33.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_c8d33.dir/CheckFunctionExists.c.o  -o cmTC_c8d33 
+/usr/bin/ld: CMakeFiles/cmTC_c8d33.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `strlcpy'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_c8d33.dir/build.make:87: cmTC_c8d33] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c8d33/fast] Error 2
+
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_08424/fast && /usr/bin/make -f CMakeFiles/cmTC_08424.dir/build.make CMakeFiles/cmTC_08424.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08424.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_08424.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'strlcat' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strlcat
+                              ^
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c:7:3: note: 'strlcat' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS strlcat
+                              ^
+1 warning generated.
+Linking C executable cmTC_08424
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08424.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat    -rdynamic CMakeFiles/cmTC_08424.dir/CheckFunctionExists.c.o  -o cmTC_08424 
+/usr/bin/ld: CMakeFiles/cmTC_08424.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `strlcat'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_08424.dir/build.make:87: cmTC_08424] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_08424/fast] Error 2
+
+
+
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_474fb/fast && /usr/bin/make -f CMakeFiles/cmTC_474fb.dir/build.make CMakeFiles/cmTC_474fb.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_474fb.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev   -o CMakeFiles/cmTC_474fb.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_474fb
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_474fb.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev    -rdynamic CMakeFiles/cmTC_474fb.dir/CheckFunctionExists.c.o  -o cmTC_474fb 
+/usr/bin/ld: CMakeFiles/cmTC_474fb.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_strrev'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_474fb.dir/build.make:87: cmTC_474fb] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_474fb/fast] Error 2
+
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_56cc8/fast && /usr/bin/make -f CMakeFiles/cmTC_56cc8.dir/build.make CMakeFiles/cmTC_56cc8.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56cc8.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr   -o CMakeFiles/cmTC_56cc8.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_56cc8
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56cc8.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr    -rdynamic CMakeFiles/cmTC_56cc8.dir/CheckFunctionExists.c.o  -o cmTC_56cc8 
+/usr/bin/ld: CMakeFiles/cmTC_56cc8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_strupr'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_56cc8.dir/build.make:87: cmTC_56cc8] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_56cc8/fast] Error 2
+
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9ab0a/fast && /usr/bin/make -f CMakeFiles/cmTC_9ab0a.dir/build.make CMakeFiles/cmTC_9ab0a.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ab0a.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr   -o CMakeFiles/cmTC_9ab0a.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9ab0a
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ab0a.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr    -rdynamic CMakeFiles/cmTC_9ab0a.dir/CheckFunctionExists.c.o  -o cmTC_9ab0a 
+/usr/bin/ld: CMakeFiles/cmTC_9ab0a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_strlwr'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_9ab0a.dir/build.make:87: cmTC_9ab0a] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9ab0a/fast] Error 2
+
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3f1ba/fast && /usr/bin/make -f CMakeFiles/cmTC_3f1ba.dir/build.make CMakeFiles/cmTC_3f1ba.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f1ba.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa   -o CMakeFiles/cmTC_3f1ba.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3f1ba
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f1ba.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa    -rdynamic CMakeFiles/cmTC_3f1ba.dir/CheckFunctionExists.c.o  -o cmTC_3f1ba 
+/usr/bin/ld: CMakeFiles/cmTC_3f1ba.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `itoa'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_3f1ba.dir/build.make:87: cmTC_3f1ba] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3f1ba/fast] Error 2
+
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f300c/fast && /usr/bin/make -f CMakeFiles/cmTC_f300c.dir/build.make CMakeFiles/cmTC_f300c.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f300c.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa   -o CMakeFiles/cmTC_f300c.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f300c
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f300c.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa    -rdynamic CMakeFiles/cmTC_f300c.dir/CheckFunctionExists.c.o  -o cmTC_f300c 
+/usr/bin/ld: CMakeFiles/cmTC_f300c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_ltoa'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_f300c.dir/build.make:87: cmTC_f300c] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f300c/fast] Error 2
+
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23f2d/fast && /usr/bin/make -f CMakeFiles/cmTC_23f2d.dir/build.make CMakeFiles/cmTC_23f2d.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23f2d.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa   -o CMakeFiles/cmTC_23f2d.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_23f2d
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23f2d.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa    -rdynamic CMakeFiles/cmTC_23f2d.dir/CheckFunctionExists.c.o  -o cmTC_23f2d 
+/usr/bin/ld: CMakeFiles/cmTC_23f2d.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_uitoa'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_23f2d.dir/build.make:87: cmTC_23f2d] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_23f2d/fast] Error 2
+
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_57485/fast && /usr/bin/make -f CMakeFiles/cmTC_57485.dir/build.make CMakeFiles/cmTC_57485.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57485.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa   -o CMakeFiles/cmTC_57485.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_57485
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57485.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa    -rdynamic CMakeFiles/cmTC_57485.dir/CheckFunctionExists.c.o  -o cmTC_57485 
+/usr/bin/ld: CMakeFiles/cmTC_57485.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_ultoa'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_57485.dir/build.make:87: cmTC_57485] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_57485/fast] Error 2
+
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c7812/fast && /usr/bin/make -f CMakeFiles/cmTC_c7812.dir/build.make CMakeFiles/cmTC_c7812.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c7812.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa   -o CMakeFiles/cmTC_c7812.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c7812
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7812.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa    -rdynamic CMakeFiles/cmTC_c7812.dir/CheckFunctionExists.c.o  -o cmTC_c7812 
+/usr/bin/ld: CMakeFiles/cmTC_c7812.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_i64toa'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_c7812.dir/build.make:87: cmTC_c7812] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c7812/fast] Error 2
+
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ecf12/fast && /usr/bin/make -f CMakeFiles/cmTC_ecf12.dir/build.make CMakeFiles/cmTC_ecf12.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ecf12.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa   -o CMakeFiles/cmTC_ecf12.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ecf12
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecf12.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa    -rdynamic CMakeFiles/cmTC_ecf12.dir/CheckFunctionExists.c.o  -o cmTC_ecf12 
+/usr/bin/ld: CMakeFiles/cmTC_ecf12.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_ui64toa'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_ecf12.dir/build.make:87: cmTC_ecf12] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ecf12/fast] Error 2
+
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_79932/fast && /usr/bin/make -f CMakeFiles/cmTC_79932.dir/build.make CMakeFiles/cmTC_79932.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79932.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp   -o CMakeFiles/cmTC_79932.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_79932
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79932.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp    -rdynamic CMakeFiles/cmTC_79932.dir/CheckFunctionExists.c.o  -o cmTC_79932 
+/usr/bin/ld: CMakeFiles/cmTC_79932.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_stricmp'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_79932.dir/build.make:87: cmTC_79932] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_79932/fast] Error 2
+
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7c4de/fast && /usr/bin/make -f CMakeFiles/cmTC_7c4de.dir/build.make CMakeFiles/cmTC_7c4de.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7c4de.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp   -o CMakeFiles/cmTC_7c4de.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7c4de
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c4de.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp    -rdynamic CMakeFiles/cmTC_7c4de.dir/CheckFunctionExists.c.o  -o cmTC_7c4de 
+/usr/bin/ld: CMakeFiles/cmTC_7c4de.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `_strnicmp'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_7c4de.dir/build.make:87: cmTC_7c4de] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7c4de/fast] Error 2
+
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cba90/fast && /usr/bin/make -f CMakeFiles/cmTC_cba90.dir/build.make CMakeFiles/cmTC_cba90.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cba90.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_cba90.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cba90
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cba90.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname    -rdynamic CMakeFiles/cmTC_cba90.dir/CheckFunctionExists.c.o  -o cmTC_cba90 
+/usr/bin/ld: CMakeFiles/cmTC_cba90.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `sysctlbyname'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_cba90.dir/build.make:87: cmTC_cba90] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cba90/fast] Error 2
+
+
+
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_563ee/fast && /usr/bin/make -f CMakeFiles/cmTC_563ee.dir/build.make CMakeFiles/cmTC_563ee.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_563ee.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_563ee.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_563ee
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_563ee.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open    -rdynamic CMakeFiles/cmTC_563ee.dir/CheckFunctionExists.c.o  -o cmTC_563ee -liconv 
+/usr/bin/ld: cannot find -liconv
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_563ee.dir/build.make:87: cmTC_563ee] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_563ee/fast] Error 2
+
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5e276/fast && /usr/bin/make -f CMakeFiles/cmTC_5e276.dir/build.make CMakeFiles/cmTC_5e276.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e276.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTC_5e276.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'alloca' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS alloca
+                              ^
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c:7:3: note: 'alloca' is a builtin with type 'void *(unsigned long)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS alloca
+                              ^
+1 warning generated.
+Linking C executable cmTC_5e276
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e276.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca    -rdynamic CMakeFiles/cmTC_5e276.dir/CheckFunctionExists.c.o  -o cmTC_5e276 
+/usr/bin/ld: CMakeFiles/cmTC_5e276.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `alloca'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_5e276.dir/build.make:87: cmTC_5e276] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5e276/fast] Error 2
+
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7280b/fast && /usr/bin/make -f CMakeFiles/cmTC_7280b.dir/build.make CMakeFiles/cmTC_7280b.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7280b.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_7280b.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7280b
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7280b.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen    -rdynamic CMakeFiles/cmTC_7280b.dir/CheckFunctionExists.c.o  -o cmTC_7280b 
+/usr/bin/ld: CMakeFiles/cmTC_7280b.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `dlopen'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_7280b.dir/build.make:87: cmTC_7280b] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7280b/fast] Error 2
+
+
+
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_64db2/fast && /usr/bin/make -f CMakeFiles/cmTC_64db2.dir/build.make CMakeFiles/cmTC_64db2.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_64db2.dir/CheckIncludeFile.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos    -o CMakeFiles/cmTC_64db2.dir/CheckIncludeFile.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'audio/audiolib.h' file not found
+#include <audio/audiolib.h>
+         ^~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_64db2.dir/build.make:66: CMakeFiles/cmTC_64db2.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_64db2/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bfcef/fast && /usr/bin/make -f CMakeFiles/cmTC_bfcef.dir/build.make CMakeFiles/cmTC_bfcef.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bfcef.dir/src.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_VIDEO_RPI  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -o CMakeFiles/cmTC_bfcef.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+clang-9: warning: argument unused during compilation: '-L/opt/vc/lib' [-Wunused-command-line-argument]
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: 'bcm_host.h' file not found
+        #include <bcm_host.h>
+                 ^~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_bfcef.dir/build.make:66: CMakeFiles/cmTC_bfcef.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_bfcef/fast] Error 2
+
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V1 failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a2e0f/fast && /usr/bin/make -f CMakeFiles/cmTC_a2e0f.dir/build.make CMakeFiles/cmTC_a2e0f.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2e0f.dir/src.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_VIDEO_OPENGLES_V1   -o CMakeFiles/cmTC_a2e0f.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:16: fatal error: 'GLES/gl.h' file not found
+      #include <GLES/gl.h>
+               ^~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a2e0f.dir/build.make:66: CMakeFiles/cmTC_a2e0f.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a2e0f/fast] Error 2
+
+
+Source file was:
+
+      #include <GLES/gl.h>
+      #include <GLES/glext.h>
+      int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_24199/fast && /usr/bin/make -f CMakeFiles/cmTC_24199.dir/build.make CMakeFiles/cmTC_24199.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24199.dir/src.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_VIDEO_VIVANTE_VDK   -o CMakeFiles/cmTC_24199.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: 'gc_vdk.h' file not found
+        #include <gc_vdk.h>
+                 ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_24199.dir/build.make:66: CMakeFiles/cmTC_24199.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_24199/fast] Error 2
+
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_84e10/fast && /usr/bin/make -f CMakeFiles/cmTC_84e10.dir/build.make CMakeFiles/cmTC_84e10.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84e10.dir/src.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_VIDEO_VIVANTE_EGL_FB   -o CMakeFiles/cmTC_84e10.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: 'EGL/eglvivante.h' file not found
+        #include <EGL/eglvivante.h>
+                 ^~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_84e10.dir/build.make:66: CMakeFiles/cmTC_84e10.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_84e10/fast] Error 2
+
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file fcitx/frontend.h exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_20561/fast && /usr/bin/make -f CMakeFiles/cmTC_20561.dir/build.make CMakeFiles/cmTC_20561.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20561.dir/CheckIncludeFile.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos    -o CMakeFiles/cmTC_20561.dir/CheckIncludeFile.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'fcitx/frontend.h' file not found
+#include <fcitx/frontend.h>
+         ^~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_20561.dir/build.make:66: CMakeFiles/cmTC_20561.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_20561/fast] Error 2
+
+
+
+Determining if the function hid_init exists in the usbhid failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bbf89/fast && /usr/bin/make -f CMakeFiles/cmTC_bbf89.dir/build.make CMakeFiles/cmTC_bbf89.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bbf89.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_bbf89.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bbf89
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbf89.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_bbf89.dir/CheckFunctionExists.c.o  -o cmTC_bbf89 -lusbhid 
+/usr/bin/ld: cannot find -lusbhid
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_bbf89.dir/build.make:87: cmTC_bbf89] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_bbf89/fast] Error 2
+
+
+
+Determining if the include file libusb.h exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ce5c8/fast && /usr/bin/make -f CMakeFiles/cmTC_ce5c8.dir/build.make CMakeFiles/cmTC_ce5c8.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce5c8.dir/CheckIncludeFile.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos    -o CMakeFiles/cmTC_ce5c8.dir/CheckIncludeFile.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'libusb.h' file not found
+#include <libusb.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ce5c8.dir/build.make:66: CMakeFiles/cmTC_ce5c8.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ce5c8/fast] Error 2
+
+
+
+Determining if the function hid_init exists in the usb failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_32f25/fast && /usr/bin/make -f CMakeFiles/cmTC_32f25.dir/build.make CMakeFiles/cmTC_32f25.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32f25.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_32f25.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_32f25
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32f25.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_32f25.dir/CheckFunctionExists.c.o  -o cmTC_32f25 -lusb 
+/usr/bin/ld: CMakeFiles/cmTC_32f25.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `hid_init'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_32f25.dir/build.make:87: cmTC_32f25] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_32f25/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_USBHID failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7c404/fast && /usr/bin/make -f CMakeFiles/cmTC_7c404.dir/build.make CMakeFiles/cmTC_7c404.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7c404.dir/src.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_USBHID  -DHAVE_USB_H   -o CMakeFiles/cmTC_7c404.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:10:19: fatal error: 'dev/usb/usb.h' file not found
+        # include <dev/usb/usb.h>
+                  ^~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_7c404.dir/build.make:66: CMakeFiles/cmTC_7c404.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7c404/fast] Error 2
+
+
+Source file was:
+
+       #include <sys/types.h>
+        #if defined(HAVE_USB_H)
+        #include <usb.h>
+        #endif
+        #ifdef __DragonFly__
+        # include <bus/usb/usb.h>
+        # include <bus/usb/usbhid.h>
+        #else
+        # include <dev/usb/usb.h>
+        # include <dev/usb/usbhid.h>
+        #endif
+        #if defined(HAVE_USBHID_H)
+        #include <usbhid.h>
+        #elif defined(HAVE_LIBUSB_H)
+        #include <libusb.h>
+        #elif defined(HAVE_LIBUSBHID_H)
+        #include <libusbhid.h>
+        #endif
+        int main(int argc, char **argv) {
+          struct report_desc *repdesc;
+          struct usb_ctl_report *repbuf;
+          hid_kind_t hidkind;
+          return 0;
+        }
+Performing C SOURCE FILE Test HAVE_PTHREAD_NP_H failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_271ba/fast && /usr/bin/make -f CMakeFiles/cmTC_271ba.dir/build.make CMakeFiles/cmTC_271ba.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_271ba.dir/src.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DHAVE_PTHREAD_NP_H  -DHAVE_USB_H -D_REENTRANT -pthread   -o CMakeFiles/cmTC_271ba.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:20: fatal error: 'pthread_np.h' file not found
+          #include <pthread_np.h>
+                   ^~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_271ba.dir/build.make:66: CMakeFiles/cmTC_271ba.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_271ba/fast] Error 2
+
+
+Source file was:
+
+          #include <pthread.h>
+          #include <pthread_np.h>
+          int main(int argc, char** argv) { return 0; }
+Determining if the function pthread_set_name_np exists failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6a526/fast && /usr/bin/make -f CMakeFiles/cmTC_6a526.dir/build.make CMakeFiles/cmTC_6a526.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a526.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np  -DHAVE_USB_H -D_REENTRANT -pthread   -o CMakeFiles/cmTC_6a526.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6a526
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a526.dir/link.txt --verbose=1
+/usr/bin/clang  -idirafter /home/cyberunner23/Dev/Englympics/Control/deps/SDL2/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np  -DHAVE_USB_H -D_REENTRANT -pthread    -rdynamic CMakeFiles/cmTC_6a526.dir/CheckFunctionExists.c.o  -o cmTC_6a526 
+/usr/bin/ld: CMakeFiles/cmTC_6a526.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_set_name_np'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_6a526.dir/build.make:87: cmTC_6a526] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6a526/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dd904/fast && /usr/bin/make -f CMakeFiles/cmTC_dd904.dir/build.make CMakeFiles/cmTC_dd904.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd904.dir/src.c.o
+/usr/bin/clang   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_dd904.dir/src.c.o   -c /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_dd904
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd904.dir/link.txt --verbose=1
+/usr/bin/clang  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_dd904.dir/src.c.o  -o cmTC_dd904 
+/usr/bin/ld: CMakeFiles/cmTC_dd904.dir/src.c.o: in function `main':
+src.c:(.text+0x32): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x3e): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_join'
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_dd904.dir/build.make:87: cmTC_dd904] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_dd904/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_81033/fast && /usr/bin/make -f CMakeFiles/cmTC_81033.dir/build.make CMakeFiles/cmTC_81033.dir/build
+make[1]: Entering directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81033.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_81033.dir/CheckFunctionExists.c.o   -c /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_81033
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81033.dir/link.txt --verbose=1
+/usr/bin/clang  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_81033.dir/CheckFunctionExists.c.o  -o cmTC_81033 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+clang-9: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_81033.dir/build.make:87: cmTC_81033] Error 1
+make[1]: Leaving directory '/home/cyberunner23/Dev/Englympics/Control/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_81033/fast] Error 2
+
+
+

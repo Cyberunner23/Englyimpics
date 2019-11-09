@@ -1,0 +1,30 @@
+/home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" /home/cyberunner23/Dev/Englympics/Control
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/cyberunner23/.hunter
+-- [hunter] [ Hunter-ID: e14bc15 | Toolchain-ID: bcfb592 | Config-ID: 2cb8efb ]
+-- [hunter] GLFW_ROOT: /home/cyberunner23/.hunter/_Base/e14bc15/bcfb592/2cb8efb/Install (ver.: 3.3.0-f9923e9-p0)
+CMake Warning (dev) at /home/cyberunner23/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/share/cmake-3.15/Modules/FindOpenGL.cmake:275 (message):
+  Policy CMP0072 is not set: FindOpenGL prefers GLVND by default when
+  available.  Run "cmake --help-policy CMP0072" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  FindOpenGL found both a legacy GL library:
+
+    OPENGL_gl_LIBRARY: /usr/lib/libGL.so
+
+  and GLVND libraries for OpenGL and GLX:
+
+    OPENGL_opengl_LIBRARY: /usr/lib/libOpenGL.so
+    OPENGL_glx_LIBRARY: /usr/lib/libGLX.so
+
+  OpenGL_GL_PREFERENCE has not been set to "GLVND" or "LEGACY", so for
+  compatibility with CMake 3.10 and below the legacy GL library will be used.
+Call Stack (most recent call first):
+  /home/cyberunner23/.hunter/_Base/e14bc15/bcfb592/2cb8efb/Install/lib64/cmake/glfw3/glfw3Config.cmake:34 (find_package)
+  CMakeLists.txt:19 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cyberunner23/Dev/Englympics/Control/cmake-build-debug

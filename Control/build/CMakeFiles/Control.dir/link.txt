@@ -1,0 +1,1 @@
+/usr/bin/g++    -rdynamic CMakeFiles/Control.dir/main.cpp.o  -o Control /home/cyberunner23/.hunter/_Base/e14bc15/bcfb592/2cb8efb/Install/lib64/libglfw3d.a -lrt -lm -ldl /usr/lib/libGL.so -lXcursor -lXfixes -lXinerama -lXrandr -lXrender -L/home/cyberunner23/.hunter/_Base/e14bc15/bcfb592/2cb8efb/Install/lib -lXi -lXext -lX11 -lpthread -lxcb -lXau 
